@@ -1,0 +1,18 @@
+.para {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    vertical-align:middle;
+}
+.mainDiv {
+    display: inline;
+    margin: 10px;
+    padding: 0px;
+    position: relative;
+    top: 20px;
+    max-width: auto;
+    overflow-y: hidden;
+    overflow-x:auto;
+    word-wrap:normal;
+    white-space:nowrap;
+}

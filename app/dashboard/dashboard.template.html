@@ -1,0 +1,27 @@
+<section> <h3>Popular Movies</h3>
+    <div class="mainDiv" ng-repeat="(key, value) in popularList">
+      <p class="para" ng-init="myPath = 'http://image.tmdb.org/t/p/w185'+value.poster_path">
+        <a ng-href="#!movie-detail/{{value.id}}" class="thumb">
+          <img ng-src="{{myPath}}" alt="{{value.title}}">
+        </a>
+      </p>
+    </div>
+  </section>
+  <section> <h3>Upcoming Movies</h3>
+    <div class="mainDiv" ng-repeat="(key, value) in upcomingList">
+        <p class="para" ng-init="myPath = 'http://image.tmdb.org/t/p/w185'+value.poster_path">
+          <a ng-href="#!movie-detail/{{value.id}}" class="thumb">
+            <img ng-src="{{myPath}}" alt="{{value.title}}">
+          </a>
+        </p>
+    </div>
+  </section>
+  <section> <h3>Now Playing Movies</h3>
+    <div class="mainDiv" ng-repeat="(key, value) in nowPlayingList">
+        <p class="para" ng-init="myPath = 'http://image.tmdb.org/t/p/w185'+value.poster_path">
+          <a ng-href="#!movie-detail/{{value.id}}" class="thumb">
+            <img ng-src="{{myPath}}" alt="{{value.title}}">
+          </a>
+        </p>
+    </div>
+  </section>
